@@ -1,0 +1,125 @@
+body{
+    max-width: 1440px;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+.inter-regular {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap');
+.noto-serif-main {
+  font-family: "Noto Serif", serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
+
+.main-color{
+    color: #E95A08;
+}
+
+.regular-text-size{
+    font-size: 22px;
+    color: rgba(0, 0, 0, 50%);
+}
+
+/* navbar style */
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;   
+     /* margin-top: 24px; */
+}
+
+.logo{
+    height: 135px;
+    width: 82px;
+    margin-left: 150px;
+}
+
+.menu-item{
+    display: flex;
+    gap: 4px;
+    margin-right: 150px;
+    margin-top: -15px;
+}
+
+/* baner style  */
+.Banner{
+    display: flex;
+    margin: 120px 150px auto 150px;
+}
+.title{
+    max-width: 570px;
+}
+.title-head{
+    font-size: 65px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+.paragraph{
+    margin-top: 10px;
+    font-size: 22px;
+}
+.banner-img{
+    max-width: 570px;
+}
+
+/* plants style  */
+.plants{
+    margin-top: 120px;
+    text-align: center;
+}
+.plants-head {
+    font-weight: bold;
+    font-size: 50px;
+    margin-bottom: 5px;
+}
+.plants-discription{
+    margin-top: 5px;
+    margin-left: 276px;
+    margin-right: 276px;
+}
+
+@media screen and (max-width: 576px) {
+    .logo{
+        margin-left: 10px;
+    }
+    .menu-item{
+        margin-right: 20px;
+    }
+    .Banner{
+        flex-direction: column-reverse;
+        margin: 0 auto;
+    }
+    .title{
+        margin: auto 16px;
+    }
+    .title-head{
+        font-size: 24px ;
+    }
+    .paragraph{
+        font-size: 14px;
+    }
+    .banner-img img{
+        width: 100%;
+
+    }
+    .remove{
+        display: none;
+    }
+    
+    
+}
+
+
+
+
+
+
+
