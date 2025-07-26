@@ -19,12 +19,20 @@ body{
     "wdth" 100;
 }
 
+.display-flex{
+    display: flex;
+}
+
 .main-color{
     color: #E95A08;
 }
 
 .regular-text-size{
     font-size: 22px;
+    color: rgba(0, 0, 0, 50%);
+}
+.regular-text{
+    font-size: 16px;
     color: rgba(0, 0, 0, 50%);
 }
 
@@ -34,6 +42,9 @@ body{
   height: 50px;
   border: none;
   color: white;
+}
+.btn:hover {
+    cursor: pointer;
 }
 
 /* navbar style */
@@ -54,7 +65,17 @@ body{
     display: flex;
     gap: 4px;
     margin-right: 150px;
-    margin-top: -15px;
+}
+.menu-item:hover{
+    cursor: pointer;
+}
+.remove{
+    display: flex;
+    gap: 20px;
+    font-size: 16px;
+}
+.cart{
+  margin-left: 20px;
 }
 
 /* baner style  */
@@ -129,6 +150,185 @@ main{
     margin-bottom: 20px;
 }
 
+/* Plant-Lover section style */
+.plants-lover{
+    max-width: 1140px;
+    margin: 200px auto 100px;
+    gap:70px;
+}
+.plants-lover > div {
+    flex: 1;
+}
+
+.trusted-badge{
+    width: 20%;
+    position: absolute;
+    margin-top: -130px;
+    margin-left: 320px;
+}
+.plants-lover-image{
+    width: 100%;
+    height: 100%;
+}
+.plants-lover-title{
+    font-size: 3.125rem;
+    font-weight: bold;
+}
+.plant-lover-description{
+    font-size: 1.375rem;
+    font-weight: 400;
+}
+.plants-content{
+    padding-top: 38px;
+    padding-bottom: 38px;
+}
+
+/* Latest  Deals style */
+.latest-deal{
+    max-width: 1140px;
+    margin: 0 auto;
+}
+.deal-content{
+    text-align: center;
+    margin-bottom:100px ;
+}
+.deal-title-Latest{
+    text-align: center;
+    font-size: 3.125rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.deal-description{
+    text-align: center;
+    font-size: 1.375rem;
+    font-weight: 400;
+}
+.latest-deal-image-container{
+ gap: 28px;
+}
+.deal-card-1{
+    background-image: url("../assets/deal-bloom.png");
+}
+.deal-card-2{
+    background-image: url("../assets/deal-ana.png");
+}
+.deal-card-1,.deal-card-2{
+    color: white;
+    background-repeat: no-repeat;
+    background-position:top left;
+    background-size: 100%;
+    width: 360px;
+    height: 195px;
+    border-radius: 15px;
+    margin-bottom:28px ;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.4);
+    background-blend-mode: multiply;
+}
+.deal-card-1 h3,.deal-card-2 h3,.deal-card-3 h3{
+    font-size: 1.25rem;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 0;
+}
+.deal-card-1 a,.deal-card-2 a,.deal-card-3 a{
+    font-size: 1rem;
+    font-weight: 700;
+    color: white;
+    text-align: center;
+}
+.deal-card-3{
+    color: white;
+    background-image: url("../assets/deal-zabo.png");
+    background-repeat: no-repeat;
+    background-position:top left;
+    background-size:752px 418px ;
+    width: 752px;
+    height: 418px;
+    border-radius: 15px;
+    margin-bottom:28px ;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.4);
+    background-blend-mode: multiply;
+}
+.deal-card-3 h3{
+    font-size: 2.5rem;
+}
+.deal-card-3 a{
+    font-size: 1.75rem;
+}
+
+/* Join brunch style */
+.join-brunch-content{
+    background-image: url("../assets/news-letter-bg.png");
+    background-repeat: no-repeat;
+    background-position: top left;
+    width: 100%;
+    height: 533px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    color: white; 
+    margin-top: 120px; 
+}
+.join-brunch-title{
+    font-size: 3.125rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+.email-input{
+    width: 640px;
+    height: 55px;
+    margin-right: 0;
+    border: 0;
+    border-radius: 0;
+}
+.btn-subs{
+    margin-right: 0;
+}
+.input-form{
+    display: flex;
+}
+
+/* Footer Style */
+.Div-footer{
+    padding: 50px 150px;
+    display: flex;
+    justify-content: space-around;
+}
+.footer-description{
+    font-size: 1.375rem;
+    font-weight: 400;
+}
+.Div-footer > div {
+    flex: 1;
+}
+.footer-column-2 li,a ,.footer-column-3 li, a{
+    list-style: none;
+    text-decoration: none;
+}
+.footer-column-2 li,.footer-column-3 li{
+    margin-bottom: 25px;
+}
+.footer-column-4{
+    display: flex;
+    justify-content: space-around;
+}
+.footer-column-4 img{
+    width: 10%;
+    height: 10%;
+}
+
+
 @media screen and (max-width: 576px) {
     .logo{
         margin-left: 10px;
@@ -151,13 +351,120 @@ main{
     }
     .banner-img img{
         width: 100%;
-
     }
     .remove{
         display: none;
     }
+    .plants{
+        margin-top: -80px;
+    }
+    .plants-head{
+        font-size: 24px;
+    }
+    .plants-discription{
+       font-size: 14px;
+       margin:auto 28px;
+    }
+    .card img{
+        width: 100%;
+        height: auto;
+    }
+    .card-item{
+        grid-template-columns: repeat(2, 1fr);
+        width: 100%;
+    }
+
+
+    .plants{
+    max-width: 1140px;
+    margin: 0;
+    }
+    .plants-lover{
+        flex-direction: column;
+        margin-top: 40px;
+        gap: 0;
+    }
+    .trusted-badge{
+    display: none;
+    }
+    .plants-lover-title{
+    font-size: 1.5rem;
+    margin-top: 20px;
+    margin-bottom:20px;
+    }
+    .plant-lover-description{
+    font-size: 0.875rem;
+    }
+    .plants-content{
+        padding: 0;
+    }
+    .hide-on-mobile{
+        display: none;
+    }
+
+    .latest-deal-image-container{
+        flex-direction: column;
+     }
+     .deal-card-3{
+        background-size: 100%;
+        width: 360px;
+        height: 195px;
+     }
+
+     .latest-deal-image-container{
+        gap: 0;
+     }
+     .deal-card-3 h3{
+    font-size: 1rem;
+     }
+     .deal-card-3 a{
+    font-size: 1.25rem;
+     }
+     .deal-title-Latest{
+    font-size: 1.5rem;
+}
+.deal-description{
+    font-size: 0.875rem;
+}
+.deal-content{
+    text-align: center;
+    margin-bottom: 50px ;
+}
+
+.join-brunch-content{
+    background-size:393px 275px;
+    width:393px;
+    height: 275px;
+    margin-top:0;
+}
+.join-brunch-title{
+    font-size: 1.25rem;
+    margin-bottom: 15px;
+}
+.email-input{
+    width: 218px;
+    margin-right: 0;
+    border: 0;
+    border-radius: 0;
+}
+.btn-subs{
+    padding: 15px 10px;
+    font-size: 1rem;
     
-    
+}
+.input-form{
+    display: flex;
+}
+
+.Div-footer{
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+
+
 }
 
 
